@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Adobe Fonts (Typekit) - Proxima Nova & Adobe Garamond Pro */
+@import url("https://use.typekit.net/rwe8qqxa.css");
+
+:root {
+  --primary: #3D9991;
+  --primary-dark: #2d7a73;
+  --dark: #1F1F1F;
+  --footer-bg: #1a1a1a;
+  --footer-dark: #111111;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "adobe-garamond-pro", Georgia, serif;
+  color: #1F1F1F;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "proxima-nova", system-ui, -apple-system, sans-serif;
+  font-weight: 400;
+}
+
+/* Navigation styles */
+.nav-link {
+  font-family: "proxima-nova", system-ui, -apple-system, sans-serif;
+  font-size: 11px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  font-weight: 400;
+  transition: opacity 0.2s ease;
+}
+
+.nav-link:hover {
+  opacity: 0.7;
+}
+
+/* Link styles */
+.content-link {
+  color: #3D9991;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.content-link:hover {
+  color: #2d7a73;
+}
+
+/* Section title styles */
+.section-title {
+  font-family: "proxima-nova", system-ui, -apple-system, sans-serif;
+  font-size: 28px;
+  font-weight: 400;
+  color: #1F1F1F;
+  letter-spacing: 0.02em;
+}
+
+/* Subsection title styles */
+.subsection-title {
+  font-family: "proxima-nova", system-ui, -apple-system, sans-serif;
+  font-size: 16px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: #3D9991;
+}
